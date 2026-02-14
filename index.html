@@ -924,296 +924,152 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav" id="navbar">
-        <div class="nav-inner">
-            <a href="#" class="nav-brand" onclick="showPage('home');return false">
-                <span class="brand-icon"><span class="material-symbols-rounded">terminal</span></span>
-                Uzair Mughal
-            </a>
-            <div class="nav-links">
-                <button class="nav-link active" data-page="home" onclick="showPage('home')">
-                    <span class="material-symbols-rounded" style="font-size:18px">home</span> Home
+    <!-- ════════ MAIN CONTENT ════════ -->
+    <div class="container">
+        <div class="donate-hero">
+            <div class="hero-avatar">
+                <span class="material-symbols-rounded">volunteer_activism</span>
+            </div>
+            <h1>Support My Work</h1>
+            <p>If you find my projects useful, consider sending a small donation. Every contribution helps me keep
+                building and maintaining open-source tools.</p>
+            <div class="hero-chips">
+                <a href="https://uzair.is-a.dev" target="_blank" class="hero-chip">
+                    <span class="material-symbols-rounded">language</span> Website
+                </a>
+                <a href="https://github.com/uzairdeveloper223" target="_blank" class="hero-chip">
+                    <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="mailto:contact@uzair.is-a.dev" class="hero-chip">
+                    <span class="material-symbols-rounded">mail</span> Contact
+                </a>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <span class="material-symbols-rounded">account_balance_wallet</span> Crypto Addresses
+        </div>
+
+        <div class="token-list">
+            <!-- BTC -->
+            <div class="token-card">
+                <div class="token-icon btc">
+                    <span class="material-symbols-rounded" style="font-size:26px">currency_bitcoin</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        Bitcoin <span class="token-network">BTC</span>
+                    </div>
+                    <div class="token-address" id="addr-btc">
+                        bc1puvdwf287p75dsdaf0rzhh8ps6ylk68enhckvduesyyajl38yndssl3yj5e</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('btc')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
                 </button>
-                <button class="nav-link" data-page="donate" onclick="showPage('donate')">
-                    <span class="material-symbols-rounded" style="font-size:18px">volunteer_activism</span> Donate
+            </div>
+
+            <!-- ETH -->
+            <div class="token-card">
+                <div class="token-icon eth">
+                    <span class="material-symbols-rounded" style="font-size:26px">diamond</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        Ethereum <span class="token-network">ETH / ERC-20</span>
+                    </div>
+                    <div class="token-address" id="addr-eth">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('eth')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
                 </button>
-                <a href="https://github.com/uzairdeveloper223" target="_blank" class="nav-gh desktop">
+            </div>
+
+            <!-- TON -->
+            <div class="token-card">
+                <div class="token-icon ton">
+                    <span class="material-symbols-rounded" style="font-size:26px">token</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        Toncoin <span class="token-network">TON - W5</span>
+                    </div>
+                    <div class="token-address" id="addr-ton">UQBP8bUT2MSKVna_tHOIZrOy9h5QLMzFSX9RjKw-_DJgj8df</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('ton')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                </button>
+            </div>
+
+            <!-- SOL -->
+            <div class="token-card">
+                <div class="token-icon sol">
+                    <span class="material-symbols-rounded" style="font-size:26px">sunny</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        Solana <span class="token-network">SOL</span>
+                    </div>
+                    <div class="token-address" id="addr-sol">BdNc9VgkZe5aPV9Ryt77inL6RqjCo6tRAxbrDMsBhtQW</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('sol')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                </button>
+            </div>
+
+            <!-- USDT -->
+            <div class="token-card">
+                <div class="token-icon usdt">
+                    <span class="material-symbols-rounded" style="font-size:26px">paid</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        Tether <span class="token-network">USDT (ERC-20)</span>
+                    </div>
+                    <div class="token-address" id="addr-usdt">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('usdt')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                </button>
+            </div>
+
+            <!-- TRX -->
+            <div class="token-card">
+                <div class="token-icon trx">
+                    <span class="material-symbols-rounded" style="font-size:26px">bolt</span>
+                </div>
+                <div class="token-info">
+                    <div class="token-name">
+                        TRON <span class="token-network">TRX</span>
+                    </div>
+                    <div class="token-address" id="addr-trx">TFTnsqcjNhZwVKPPNV2XmKwgz5fKNQSMr1</div>
+                </div>
+                <button class="token-copy" onclick="copyAddress('trx')">
+                    <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Built by <span class="brand">Uzair Mughal</span></p>
+            <div class="footer-links">
+                <a href="https://uzair.is-a.dev" target="_blank" class="footer-link">
+                    <span class="material-symbols-rounded">language</span> uzair.is-a.dev
+                </a>
+                <a href="mailto:contact@uzair.is-a.dev" class="footer-link">
+                    <span class="material-symbols-rounded">mail</span> contact@uzair.is-a.dev
+                </a>
+                <a href="https://github.com/uzairdeveloper223" target="_blank" class="footer-link">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
                     uzairdeveloper223
                 </a>
-            </div>
-            <button class="nav-toggle" onclick="toggleDrawer()">
-                <span class="material-symbols-rounded">menu</span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer-overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
-    <div class="mobile-drawer" id="mobileDrawer">
-        <button class="drawer-close" onclick="toggleDrawer()">
-            <span class="material-symbols-rounded">close</span>
-        </button>
-        <button class="nav-link active" data-page="home" onclick="showPage('home');toggleDrawer()">
-            <span class="material-symbols-rounded" style="font-size:20px">home</span> Home
-        </button>
-        <button class="nav-link" data-page="donate" onclick="showPage('donate');toggleDrawer()">
-            <span class="material-symbols-rounded" style="font-size:20px">volunteer_activism</span> Donate
-        </button>
-        <a href="https://github.com/uzairdeveloper223" target="_blank" class="nav-gh">
-            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor">
-                <path
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-            uzairdeveloper223
-        </a>
-    </div>
-
-    <!-- ════════ HOME PAGE ════════ -->
-    <div class="page active" id="page-home">
-        <div class="container">
-            <div class="hero">
-                <div class="hero-avatar">
-                    <span class="material-symbols-rounded">person</span>
-                </div>
-                <h1>Uzair Mughal</h1>
-                <p class="hero-subtitle">
-                    Developer and open-source contributor building tools and projects that matter.
-                </p>
-                <div class="hero-chips">
-                    <div class="hero-chip">
-                        <span class="material-symbols-rounded">code</span> Developer
-                    </div>
-                    <div class="hero-chip">
-                        <span class="material-symbols-rounded">diversity_3</span> Open Source
-                    </div>
-                    <div class="hero-chip">
-                        <span class="material-symbols-rounded">devices</span> Cross-Platform
-                    </div>
-                </div>
-            </div>
-
-            <!-- Info Cards -->
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="info-card-icon purple">
-                        <span class="material-symbols-rounded">language</span>
-                    </div>
-                    <h3>Website</h3>
-                    <p><a href="https://uzair.is-a.dev" target="_blank">uzair.is-a.dev</a></p>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-icon blue">
-                        <span class="material-symbols-rounded">mail</span>
-                    </div>
-                    <h3>Contact</h3>
-                    <p><a href="mailto:contact@uzair.is-a.dev">contact@uzair.is-a.dev</a></p>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-icon green">
-                        <span class="material-symbols-rounded">volunteer_activism</span>
-                    </div>
-                    <h3>Support My Work</h3>
-                    <p><a href="#" onclick="showPage('donate');return false">Donate with crypto</a></p>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="links-section">
-                <div class="section-title">
-                    <span class="material-symbols-rounded">link</span> Quick Links
-                </div>
-                <a href="https://uzair.is-a.dev" target="_blank" class="link-row">
-                    <div class="link-icon website">
-                        <span class="material-symbols-rounded">public</span>
-                    </div>
-                    <div class="link-info">
-                        <h4>Personal Website</h4>
-                        <p>uzair.is-a.dev</p>
-                    </div>
-                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
-                </a>
-                <a href="mailto:contact@uzair.is-a.dev" class="link-row">
-                    <div class="link-icon email">
-                        <span class="material-symbols-rounded">alternate_email</span>
-                    </div>
-                    <div class="link-info">
-                        <h4>Email</h4>
-                        <p>contact@uzair.is-a.dev</p>
-                    </div>
-                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
-                </a>
-                <a href="https://github.com/uzairdeveloper223" target="_blank" class="link-row">
-                    <div class="link-icon github">
-                        <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:currentColor">
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                        </svg>
-                    </div>
-                    <div class="link-info">
-                        <h4>GitHub</h4>
-                        <p>uzairdeveloper223</p>
-                    </div>
-                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
-                </a>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <p>Built by <span class="brand">Uzair Mughal</span></p>
-                <div class="footer-links">
-                    <a href="https://uzair.is-a.dev" target="_blank" class="footer-link">
-                        <span class="material-symbols-rounded">language</span> uzair.is-a.dev
-                    </a>
-                    <a href="mailto:contact@uzair.is-a.dev" class="footer-link">
-                        <span class="material-symbols-rounded">mail</span> contact@uzair.is-a.dev
-                    </a>
-                    <a href="https://github.com/uzairdeveloper223" target="_blank" class="footer-link">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                        </svg>
-                        uzairdeveloper223
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ════════ DONATE PAGE ════════ -->
-    <div class="page" id="page-donate">
-        <div class="container">
-            <div class="donate-hero">
-                <h1>Support My Work</h1>
-                <p>If you find my projects useful, consider sending a small donation. Every contribution helps me keep
-                    building and maintaining open-source tools.</p>
-            </div>
-
-            <div class="section-title">
-                <span class="material-symbols-rounded">account_balance_wallet</span> Crypto Addresses
-            </div>
-
-            <div class="token-list">
-                <!-- BTC -->
-                <div class="token-card">
-                    <div class="token-icon btc">
-                        <span class="material-symbols-rounded" style="font-size:26px">currency_bitcoin</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            Bitcoin <span class="token-network">BTC</span>
-                        </div>
-                        <div class="token-address" id="addr-btc">
-                            bc1puvdwf287p75dsdaf0rzhh8ps6ylk68enhckvduesyyajl38yndssl3yj5e</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('btc')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-
-                <!-- ETH -->
-                <div class="token-card">
-                    <div class="token-icon eth">
-                        <span class="material-symbols-rounded" style="font-size:26px">diamond</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            Ethereum <span class="token-network">ETH / ERC-20</span>
-                        </div>
-                        <div class="token-address" id="addr-eth">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('eth')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-
-                <!-- TON -->
-                <div class="token-card">
-                    <div class="token-icon ton">
-                        <span class="material-symbols-rounded" style="font-size:26px">token</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            Toncoin <span class="token-network">TON - W5</span>
-                        </div>
-                        <div class="token-address" id="addr-ton">UQBP8bUT2MSKVna_tHOIZrOy9h5QLMzFSX9RjKw-_DJgj8df</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('ton')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-
-                <!-- SOL -->
-                <div class="token-card">
-                    <div class="token-icon sol">
-                        <span class="material-symbols-rounded" style="font-size:26px">sunny</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            Solana <span class="token-network">SOL</span>
-                        </div>
-                        <div class="token-address" id="addr-sol">BdNc9VgkZe5aPV9Ryt77inL6RqjCo6tRAxbrDMsBhtQW</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('sol')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-
-                <!-- USDT -->
-                <div class="token-card">
-                    <div class="token-icon usdt">
-                        <span class="material-symbols-rounded" style="font-size:26px">paid</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            Tether <span class="token-network">USDT (ERC-20)</span>
-                        </div>
-                        <div class="token-address" id="addr-usdt">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('usdt')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-
-                <!-- TRX -->
-                <div class="token-card">
-                    <div class="token-icon trx">
-                        <span class="material-symbols-rounded" style="font-size:26px">bolt</span>
-                    </div>
-                    <div class="token-info">
-                        <div class="token-name">
-                            TRON <span class="token-network">TRX</span>
-                        </div>
-                        <div class="token-address" id="addr-trx">TFTnsqcjNhZwVKPPNV2XmKwgz5fKNQSMr1</div>
-                    </div>
-                    <button class="token-copy" onclick="copyAddress('trx')">
-                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
-                    </button>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <p>Built by <span class="brand">Uzair Mughal</span></p>
-                <div class="footer-links">
-                    <a href="https://uzair.is-a.dev" target="_blank" class="footer-link">
-                        <span class="material-symbols-rounded">language</span> uzair.is-a.dev
-                    </a>
-                    <a href="mailto:contact@uzair.is-a.dev" class="footer-link">
-                        <span class="material-symbols-rounded">mail</span> contact@uzair.is-a.dev
-                    </a>
-                    <a href="https://github.com/uzairdeveloper223" target="_blank" class="footer-link">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                        </svg>
-                        uzairdeveloper223
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -1225,52 +1081,6 @@
     </div>
 
     <script>
-        // ── Navigation scroll effect ──
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-        });
-
-        // ── Page switching ──
-        function showPage(page, updateHistory = true) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.getElementById('page-' + page).classList.add('active');
-
-            document.querySelectorAll('.nav-link').forEach(l => {
-                l.classList.toggle('active', l.getAttribute('data-page') === page);
-            });
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            if (updateHistory) {
-                const url = new URL(window.location);
-                url.searchParams.set('page', page);
-                window.history.pushState({ page: page }, '', url);
-            }
-        }
-
-        // ── Handle URL params & History ──
-        window.addEventListener('DOMContentLoaded', () => {
-            const params = new URLSearchParams(window.location.search);
-            const page = params.get('page');
-            if (page && document.getElementById('page-' + page)) {
-                showPage(page, false);
-            }
-        });
-
-        window.addEventListener('popstate', (event) => {
-            if (event.state && event.state.page) {
-                showPage(event.state.page, false);
-            } else {
-                showPage('home', false);
-            }
-        });
-
-        // ── Mobile drawer ──
-        function toggleDrawer() {
-            document.getElementById('mobileDrawer').classList.toggle('show');
-            document.getElementById('drawerOverlay').classList.toggle('show');
-        }
-
         // ── Copy crypto address ──
         function copyAddress(token) {
             const el = document.getElementById('addr-' + token);
