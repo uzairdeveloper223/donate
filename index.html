@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Uzair Mughal - Developer</title>
+    <meta name="description"
+        content="Personal website of Uzair Mughal. Developer, open-source contributor. Donate via crypto.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2NmYmNmZiIgZD0iTTIwLDRIM2MtMS4xLDAtMiwwLjktMiwydjEyYzAsMS4xLDAuOSwyLDIsMmgxN2MxLjEsMCwyLTAuOSwyLTJWNkMyMiw0LjksMjEuMSw0LDIwLDR6IE0yMCwxOEgzVjZoMTdWMTh6IE03LjUsMTV2LTJoLTJ2Mmgydi0yaDZ2Mmgydi0yaDJ2Mmgydi0yaDF2M2gydi0zaC0xdjNoLTJ2LTNoLTJ2Mmgydi0yaC0xdi0yaDF2LTJoMnYtMmgtdjJoLTIuNXYybC0uNS41TC41LDkuNWgtMXYxaDV2LTJoMXYySDcuNXoiLz48cGF0aCBmaWxsPSIjY2ZiY2ZmIiBkPSJNNy41LDEwdjJINnYtMkg0di0yaDF2Mmgxdi0yaDEuNXoiLz48L3N2Zz4=">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZmlGllbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSIjYTc4YmZhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci10ZXJtaW5hbCI+PHBvbHlsaW5lIHBvaW50cz0iNCAxNyAxMCAxMSA0IDUiPjwvcG9seWxpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMTkiIHgyPSIyMCIgeTI9IjE5Ij48L2xpbmU+PC9zdmc+">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset ── */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle
+        }
+
+        /* ── Material You Design Tokens ── */
+        :root {
+            --md-seed: #a78bfa;
+            --md-bg: #0f0d17;
+            --md-surface: #171424;
+            --md-surface-dim: #0d0b15;
+            --md-surface-container: #1c1830;
+            --md-surface-container-high: #231e3a;
+            --md-surface-container-highest: #2a2545;
+            --md-surface-variant: #322d48;
+            --md-on-surface: #e6e0f0;
+            --md-on-surface-variant: #cac4d6;
+            --md-primary: #cfbcff;
+            --md-primary-container: #4f378b;
+            --md-on-primary: #381e72;
+            --md-on-primary-container: #eaddff;
+            --md-secondary: #ccc2dc;
+            --md-secondary-container: #4a4458;
+            --md-tertiary: #efb8c8;
+            --md-tertiary-container: #633b48;
+            --md-outline: #938f99;
+            --md-outline-variant: #49454f;
+            --md-error: #f2b8b5;
+            --md-success: #a8dab5;
+            --md-gradient: linear-gradient(135deg, #b49aff 0%, #8b5cf6 50%, #7c3aed 100%);
+            --md-gradient-warm: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+            --md-radius-xs: 8px;
+            --md-radius-sm: 12px;
+            --md-radius-md: 16px;
+            --md-radius-lg: 20px;
+            --md-radius-xl: 28px;
+            --md-radius-full: 9999px;
+            --md-elevation-1: 0 1px 3px rgba(0, 0, 0, .3), 0 1px 2px rgba(0, 0, 0, .24);
+            --md-elevation-2: 0 3px 6px rgba(0, 0, 0, .3), 0 3px 6px rgba(0, 0, 0, .22);
+            --md-elevation-3: 0 10px 20px rgba(0, 0, 0, .25), 0 6px 6px rgba(0, 0, 0, .2);
+            --md-transition: cubic-bezier(.2, 0, 0, 1);
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--md-bg);
+            color: var(--md-on-surface);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% -10%, rgba(139, 92, 246, .08), transparent),
+                radial-gradient(ellipse 60% 50% at 85% 110%, rgba(168, 85, 247, .05), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Navigation Bar (Material You Top App Bar) ── */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(23, 20, 36, .82);
+            backdrop-filter: blur(20px) saturate(1.8);
+            -webkit-backdrop-filter: blur(20px) saturate(1.8);
+            border-bottom: 1px solid rgba(73, 69, 79, .4);
+            transition: all .35s var(--md-transition);
+        }
+
+        .nav.scrolled {
+            background: rgba(28, 24, 48, .95);
+            box-shadow: var(--md-elevation-2);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 24px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--md-primary);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -.3px;
+        }
+
+        .nav-brand .brand-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--md-radius-sm);
+            background: var(--md-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            border-radius: var(--md-radius-full);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--md-on-surface-variant);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all .25s var(--md-transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            background: none;
+        }
+
+        .nav-link:hover {
+            background: var(--md-surface-variant);
+            color: var(--md-on-surface)
+        }
+
+        .nav-link.active {
+            background: var(--md-primary-container);
+            color: var(--md-on-primary-container);
+            font-weight: 600;
+        }
+
+        .nav-gh {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: var(--md-radius-full);
+            background: var(--md-surface-container-high);
+            border: 1px solid var(--md-outline-variant);
+            color: var(--md-on-surface);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all .3s var(--md-transition);
+            margin-left: 8px;
+        }
+
+        .nav-gh:hover {
+            background: var(--md-surface-variant);
+            border-color: var(--md-primary);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(139, 92, 246, .15);
+        }
+
+        .nav-gh svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor
+        }
+
+        /* Mobile hamburger */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--md-on-surface);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--md-radius-full);
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+        }
+
+        .nav-toggle:hover {
+            background: var(--md-surface-variant)
+        }
+
+        /* ── Page Container ── */
+        .page {
+            display: none;
+            position: relative;
+            z-index: 1
+        }
+
+        .page.active {
+            display: block;
+            animation: pageIn .4s var(--md-transition)
+        }
+
+        @keyframes pageIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 24px 60px
+        }
+
+        /* ── Hero Section ── */
+        .hero {
+            text-align: center;
+            padding: 60px 0 48px
+        }
+
+        .hero-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--md-radius-xl);
+            background: var(--md-gradient);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            position: relative;
+            box-shadow: 0 8px 40px rgba(139, 92, 246, .25);
+        }
+
+        .hero-avatar .material-symbols-rounded {
+            font-size: 48px;
+            color: #fff
+        }
+
+        .hero-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: calc(var(--md-radius-xl) + 4px);
+            background: var(--md-gradient);
+            opacity: .25;
+            z-index: -1;
+            filter: blur(12px);
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 52px);
+            font-weight: 800;
+            letter-spacing: -.5px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            background: var(--md-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(15px, 2.5vw, 18px);
+            color: var(--md-on-surface-variant);
+            line-height: 1.7;
+            max-width: 560px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-chips {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            border-radius: var(--md-radius-full);
+            background: var(--md-surface-container);
+            border: 1px solid var(--md-outline-variant);
+            font-size: 13px;
+            color: var(--md-on-surface-variant);
+            font-weight: 500;
+            transition: all .3s var(--md-transition);
+        }
+
+        .hero-chip:hover {
+            background: var(--md-surface-container-high);
+            border-color: var(--md-primary);
+            color: var(--md-primary);
+        }
+
+        .hero-chip .material-symbols-rounded {
+            font-size: 18px;
+            color: var(--md-primary)
+        }
+
+        /* ── Info Cards ── */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: var(--md-surface-container);
+            border: 1px solid var(--md-outline-variant);
+            border-radius: var(--md-radius-lg);
+            padding: 24px;
+            transition: all .3s var(--md-transition);
+            cursor: default;
+        }
+
+        .info-card:hover {
+            border-color: rgba(139, 92, 246, .4);
+            transform: translateY(-3px);
+            box-shadow: var(--md-elevation-2);
+        }
+
+        .info-card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--md-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+
+        .info-card-icon.purple {
+            background: rgba(139, 92, 246, .15);
+            color: #b49aff
+        }
+
+        .info-card-icon.blue {
+            background: rgba(96, 165, 250, .15);
+            color: #93bbfd
+        }
+
+        .info-card-icon.green {
+            background: rgba(74, 222, 128, .15);
+            color: #6ee7a0
+        }
+
+        .info-card-icon.pink {
+            background: rgba(244, 114, 182, .15);
+            color: #f9a8d4
+        }
+
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px
+        }
+
+        .info-card p {
+            font-size: 13px;
+            color: var(--md-on-surface-variant);
+            line-height: 1.6
+        }
+
+        .info-card a {
+            color: var(--md-primary);
+            text-decoration: none;
+            font-weight: 500
+        }
+
+        .info-card a:hover {
+            text-decoration: underline
+        }
+
+        /* ── Links Section ── */
+        .links-section {
+            margin-bottom: 40px
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--md-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title .material-symbols-rounded {
+            font-size: 20px
+        }
+
+        .link-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: var(--md-surface-container);
+            border: 1px solid var(--md-outline-variant);
+            border-radius: var(--md-radius-lg);
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: var(--md-on-surface);
+            transition: all .3s var(--md-transition);
+            cursor: pointer;
+        }
+
+        .link-row:hover {
+            background: var(--md-surface-container-high);
+            border-color: rgba(139, 92, 246, .35);
+            transform: translateX(4px);
+        }
+
+        .link-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--md-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 22px;
+        }
+
+        .link-icon.website {
+            background: rgba(139, 92, 246, .15);
+            color: #b49aff
+        }
+
+        .link-icon.email {
+            background: rgba(96, 165, 250, .15);
+            color: #93bbfd
+        }
+
+        .link-icon.github {
+            background: rgba(200, 200, 200, .12);
+            color: #e0e0e0
+        }
+
+        .link-info {
+            flex: 1;
+            min-width: 0
+        }
+
+        .link-info h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 2px
+        }
+
+        .link-info p {
+            font-size: 12px;
+            color: var(--md-on-surface-variant);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .link-arrow {
+            color: var(--md-outline);
+            font-size: 20px;
+            flex-shrink: 0
+        }
+
+        /* ── Donate Page ── */
+        .donate-hero {
+            text-align: center;
+            padding: 48px 0 40px
+        }
+
+        .donate-hero h1 {
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -.3px;
+            background: var(--md-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .donate-hero p {
+            font-size: 15px;
+            color: var(--md-on-surface-variant);
+            line-height: 1.7;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .token-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px
+        }
+
+        .token-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 20px;
+            background: var(--md-surface-container);
+            border: 1px solid var(--md-outline-variant);
+            border-radius: var(--md-radius-lg);
+            transition: all .3s var(--md-transition);
+        }
+
+        .token-card:hover {
+            border-color: rgba(139, 92, 246, .35);
+            box-shadow: var(--md-elevation-1);
+        }
+
+        .token-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--md-radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: .5px;
+        }
+
+        .token-icon.btc {
+            background: rgba(247, 147, 26, .15);
+            color: #f7931a
+        }
+
+        .token-icon.eth {
+            background: rgba(98, 126, 234, .15);
+            color: #627eea
+        }
+
+        .token-icon.ton {
+            background: rgba(0, 136, 204, .15);
+            color: #0098ea
+        }
+
+        .token-icon.sol {
+            background: rgba(153, 69, 255, .15);
+            color: #9945ff
+        }
+
+        .token-icon.usdt {
+            background: rgba(38, 161, 123, .15);
+            color: #26a17b
+        }
+
+        .token-icon.trx {
+            background: rgba(255, 6, 10, .15);
+            color: #ff060a
+        }
+
+        .token-info {
+            flex: 1;
+            min-width: 0
+        }
+
+        .token-name {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .token-network {
+            font-size: 11px;
+            color: var(--md-outline);
+            font-weight: 500;
+            padding: 2px 8px;
+            background: var(--md-surface-variant);
+            border-radius: var(--md-radius-xs);
+            display: inline-block
+        }
+
+        .token-address {
+            font-size: 12px;
+            color: var(--md-on-surface-variant);
+            font-family: 'JetBrains Mono', monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 6px;
+            padding: 8px 12px;
+            background: var(--md-surface-dim);
+            border-radius: var(--md-radius-sm);
+            border: 1px solid var(--md-outline-variant);
+        }
+
+        .token-copy {
+            padding: 10px 20px;
+            border-radius: var(--md-radius-full);
+            background: var(--md-surface-container-high);
+            border: 1px solid var(--md-outline-variant);
+            color: var(--md-on-surface);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all .25s var(--md-transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .token-copy:hover {
+            background: var(--md-primary-container);
+            color: var(--md-on-primary-container);
+            border-color: var(--md-primary-container);
+        }
+
+        .token-copy.copied {
+            background: rgba(74, 222, 128, .18);
+            color: var(--md-success);
+            border-color: rgba(74, 222, 128, .3);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding: 40px 0 24px;
+            border-top: 1px solid var(--md-outline-variant);
+            margin-top: 32px;
+        }
+
+        .footer p {
+            font-size: 12px;
+            color: var(--md-outline);
+            line-height: 2
+        }
+
+        .footer .brand {
+            color: var(--md-primary);
+            font-weight: 600
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--md-on-surface-variant);
+            text-decoration: none;
+            transition: color .2s;
+        }
+
+        .footer-link:hover {
+            color: var(--md-primary)
+        }
+
+        .footer-link .material-symbols-rounded {
+            font-size: 16px
+        }
+
+        .footer-link svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor
+        }
+
+        /* ── Snackbar (copy feedback) ── */
+        .snackbar {
+            position: fixed;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 24px;
+            border-radius: var(--md-radius-sm);
+            background: var(--md-surface-container-highest);
+            color: var(--md-on-surface);
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: var(--md-elevation-3);
+            transition: bottom .35s var(--md-transition);
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid var(--md-outline-variant);
+        }
+
+        .snackbar.show {
+            bottom: 32px
+        }
+
+        .snackbar .material-symbols-rounded {
+            color: var(--md-success);
+            font-size: 20px
+        }
+
+        /* ── Mobile Drawer ── */
+        .mobile-drawer-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 150;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        .mobile-drawer-overlay.show {
+            display: block;
+            opacity: 1
+        }
+
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100vh;
+            background: var(--md-surface);
+            border-left: 1px solid var(--md-outline-variant);
+            z-index: 151;
+            padding: 24px;
+            transition: right .35s var(--md-transition);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mobile-drawer.show {
+            right: 0
+        }
+
+        .mobile-drawer .nav-link {
+            width: 100%;
+            justify-content: flex-start;
+            padding: 14px 18px;
+            border-radius: var(--md-radius-md);
+            font-size: 15px;
+        }
+
+        .mobile-drawer .nav-gh {
+            margin-left: 0;
+            margin-top: 8px;
+            justify-content: center;
+        }
+
+        .drawer-close {
+            align-self: flex-end;
+            background: none;
+            border: none;
+            color: var(--md-on-surface-variant);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--md-radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s;
+            margin-bottom: 8px;
+        }
+
+        .drawer-close:hover {
+            background: var(--md-surface-variant)
+        }
+
+        /* ── Responsive ── */
+        @media(max-width:768px) {
+            .nav-links {
+                display: none
+            }
+
+            .nav-gh.desktop {
+                display: none
+            }
+
+            .nav-toggle {
+                display: flex
+            }
+
+            .container {
+                padding: 80px 16px 40px
+            }
+
+            .hero {
+                padding: 32px 0 32px
+            }
+
+            .hero-avatar {
+                width: 80px;
+                height: 80px
+            }
+
+            .hero-avatar .material-symbols-rounded {
+                font-size: 36px
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr
+            }
+
+            .token-card {
+                flex-wrap: wrap
+            }
+
+            .token-info {
+                min-width: 100%;
+                order: 2
+            }
+
+            .token-icon {
+                order: 1
+            }
+
+            .token-copy {
+                order: 3;
+                width: 100%;
+                justify-content: center
+            }
+
+            .token-address {
+                font-size: 11px
+            }
+
+            .donate-hero {
+                padding: 24px 0 28px
+            }
+        }
+
+        @media(min-width:769px) {
+            .nav-toggle {
+                display: none !important
+            }
+
+            .mobile-drawer,
+            .mobile-drawer-overlay {
+                display: none !important
+            }
+        }
+
+        /* ── Scrollbar ── */
+        ::-webkit-scrollbar {
+            width: 6px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--md-surface-variant);
+            border-radius: 3px
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--md-outline-variant)
+        }
+
+        /* ── Selection ── */
+        ::selection {
+            background: rgba(139, 92, 246, .3);
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand" onclick="showPage('home');return false">
+                <span class="brand-icon"><span class="material-symbols-rounded">terminal</span></span>
+                Uzair Mughal
+            </a>
+            <div class="nav-links">
+                <button class="nav-link active" data-page="home" onclick="showPage('home')">
+                    <span class="material-symbols-rounded" style="font-size:18px">home</span> Home
+                </button>
+                <button class="nav-link" data-page="donate" onclick="showPage('donate')">
+                    <span class="material-symbols-rounded" style="font-size:18px">volunteer_activism</span> Donate
+                </button>
+                <a href="https://github.com/uzairdeveloper223" target="_blank" class="nav-gh desktop">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    uzairdeveloper223
+                </a>
+            </div>
+            <button class="nav-toggle" onclick="toggleDrawer()">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer-overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" onclick="toggleDrawer()">
+            <span class="material-symbols-rounded">close</span>
+        </button>
+        <button class="nav-link active" data-page="home" onclick="showPage('home');toggleDrawer()">
+            <span class="material-symbols-rounded" style="font-size:20px">home</span> Home
+        </button>
+        <button class="nav-link" data-page="donate" onclick="showPage('donate');toggleDrawer()">
+            <span class="material-symbols-rounded" style="font-size:20px">volunteer_activism</span> Donate
+        </button>
+        <a href="https://github.com/uzairdeveloper223" target="_blank" class="nav-gh">
+            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor">
+                <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            uzairdeveloper223
+        </a>
+    </div>
+
+    <!-- ════════ HOME PAGE ════════ -->
+    <div class="page active" id="page-home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-avatar">
+                    <span class="material-symbols-rounded">person</span>
+                </div>
+                <h1>Uzair Mughal</h1>
+                <p class="hero-subtitle">
+                    Developer and open-source contributor building tools and projects that matter.
+                </p>
+                <div class="hero-chips">
+                    <div class="hero-chip">
+                        <span class="material-symbols-rounded">code</span> Developer
+                    </div>
+                    <div class="hero-chip">
+                        <span class="material-symbols-rounded">diversity_3</span> Open Source
+                    </div>
+                    <div class="hero-chip">
+                        <span class="material-symbols-rounded">devices</span> Cross-Platform
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-icon purple">
+                        <span class="material-symbols-rounded">language</span>
+                    </div>
+                    <h3>Website</h3>
+                    <p><a href="https://uzair.is-a.dev" target="_blank">uzair.is-a.dev</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon blue">
+                        <span class="material-symbols-rounded">mail</span>
+                    </div>
+                    <h3>Contact</h3>
+                    <p><a href="mailto:contact@uzair.is-a.dev">contact@uzair.is-a.dev</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon green">
+                        <span class="material-symbols-rounded">volunteer_activism</span>
+                    </div>
+                    <h3>Support My Work</h3>
+                    <p><a href="#" onclick="showPage('donate');return false">Donate with crypto</a></p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="links-section">
+                <div class="section-title">
+                    <span class="material-symbols-rounded">link</span> Quick Links
+                </div>
+                <a href="https://uzair.is-a.dev" target="_blank" class="link-row">
+                    <div class="link-icon website">
+                        <span class="material-symbols-rounded">public</span>
+                    </div>
+                    <div class="link-info">
+                        <h4>Personal Website</h4>
+                        <p>uzair.is-a.dev</p>
+                    </div>
+                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
+                </a>
+                <a href="mailto:contact@uzair.is-a.dev" class="link-row">
+                    <div class="link-icon email">
+                        <span class="material-symbols-rounded">alternate_email</span>
+                    </div>
+                    <div class="link-info">
+                        <h4>Email</h4>
+                        <p>contact@uzair.is-a.dev</p>
+                    </div>
+                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
+                </a>
+                <a href="https://github.com/uzairdeveloper223" target="_blank" class="link-row">
+                    <div class="link-icon github">
+                        <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </div>
+                    <div class="link-info">
+                        <h4>GitHub</h4>
+                        <p>uzairdeveloper223</p>
+                    </div>
+                    <span class="material-symbols-rounded link-arrow">arrow_forward</span>
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Built by <span class="brand">Uzair Mughal</span></p>
+                <div class="footer-links">
+                    <a href="https://uzair.is-a.dev" target="_blank" class="footer-link">
+                        <span class="material-symbols-rounded">language</span> uzair.is-a.dev
+                    </a>
+                    <a href="mailto:contact@uzair.is-a.dev" class="footer-link">
+                        <span class="material-symbols-rounded">mail</span> contact@uzair.is-a.dev
+                    </a>
+                    <a href="https://github.com/uzairdeveloper223" target="_blank" class="footer-link">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        uzairdeveloper223
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════ DONATE PAGE ════════ -->
+    <div class="page" id="page-donate">
+        <div class="container">
+            <div class="donate-hero">
+                <h1>Support My Work</h1>
+                <p>If you find my projects useful, consider sending a small donation. Every contribution helps me keep
+                    building and maintaining open-source tools.</p>
+            </div>
+
+            <div class="section-title">
+                <span class="material-symbols-rounded">account_balance_wallet</span> Crypto Addresses
+            </div>
+
+            <div class="token-list">
+                <!-- BTC -->
+                <div class="token-card">
+                    <div class="token-icon btc">
+                        <span class="material-symbols-rounded" style="font-size:26px">currency_bitcoin</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            Bitcoin <span class="token-network">BTC</span>
+                        </div>
+                        <div class="token-address" id="addr-btc">
+                            bc1puvdwf287p75dsdaf0rzhh8ps6ylk68enhckvduesyyajl38yndssl3yj5e</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('btc')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+
+                <!-- ETH -->
+                <div class="token-card">
+                    <div class="token-icon eth">
+                        <span class="material-symbols-rounded" style="font-size:26px">diamond</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            Ethereum <span class="token-network">ETH / ERC-20</span>
+                        </div>
+                        <div class="token-address" id="addr-eth">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('eth')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+
+                <!-- TON -->
+                <div class="token-card">
+                    <div class="token-icon ton">
+                        <span class="material-symbols-rounded" style="font-size:26px">token</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            Toncoin <span class="token-network">TON - W5</span>
+                        </div>
+                        <div class="token-address" id="addr-ton">UQBP8bUT2MSKVna_tHOIZrOy9h5QLMzFSX9RjKw-_DJgj8df</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('ton')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+
+                <!-- SOL -->
+                <div class="token-card">
+                    <div class="token-icon sol">
+                        <span class="material-symbols-rounded" style="font-size:26px">sunny</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            Solana <span class="token-network">SOL</span>
+                        </div>
+                        <div class="token-address" id="addr-sol">BdNc9VgkZe5aPV9Ryt77inL6RqjCo6tRAxbrDMsBhtQW</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('sol')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+
+                <!-- USDT -->
+                <div class="token-card">
+                    <div class="token-icon usdt">
+                        <span class="material-symbols-rounded" style="font-size:26px">paid</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            Tether <span class="token-network">USDT (ERC-20)</span>
+                        </div>
+                        <div class="token-address" id="addr-usdt">0x6108956cef9e76141502b014371d15aa82a9fde2</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('usdt')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+
+                <!-- TRX -->
+                <div class="token-card">
+                    <div class="token-icon trx">
+                        <span class="material-symbols-rounded" style="font-size:26px">bolt</span>
+                    </div>
+                    <div class="token-info">
+                        <div class="token-name">
+                            TRON <span class="token-network">TRX</span>
+                        </div>
+                        <div class="token-address" id="addr-trx">TFTnsqcjNhZwVKPPNV2XmKwgz5fKNQSMr1</div>
+                    </div>
+                    <button class="token-copy" onclick="copyAddress('trx')">
+                        <span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Built by <span class="brand">Uzair Mughal</span></p>
+                <div class="footer-links">
+                    <a href="https://uzair.is-a.dev" target="_blank" class="footer-link">
+                        <span class="material-symbols-rounded">language</span> uzair.is-a.dev
+                    </a>
+                    <a href="mailto:contact@uzair.is-a.dev" class="footer-link">
+                        <span class="material-symbols-rounded">mail</span> contact@uzair.is-a.dev
+                    </a>
+                    <a href="https://github.com/uzairdeveloper223" target="_blank" class="footer-link">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        uzairdeveloper223
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snackbar -->
+    <div class="snackbar" id="snackbar">
+        <span class="material-symbols-rounded">check_circle</span>
+        <span id="snackbar-text">Address copied</span>
+    </div>
+
+    <script>
+        // ── Navigation scroll effect ──
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // ── Page switching ──
+        function showPage(page, updateHistory = true) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page-' + page).classList.add('active');
+
+            document.querySelectorAll('.nav-link').forEach(l => {
+                l.classList.toggle('active', l.getAttribute('data-page') === page);
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (updateHistory) {
+                const url = new URL(window.location);
+                url.searchParams.set('page', page);
+                window.history.pushState({ page: page }, '', url);
+            }
+        }
+
+        // ── Handle URL params & History ──
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const page = params.get('page');
+            if (page && document.getElementById('page-' + page)) {
+                showPage(page, false);
+            }
+        });
+
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.page) {
+                showPage(event.state.page, false);
+            } else {
+                showPage('home', false);
+            }
+        });
+
+        // ── Mobile drawer ──
+        function toggleDrawer() {
+            document.getElementById('mobileDrawer').classList.toggle('show');
+            document.getElementById('drawerOverlay').classList.toggle('show');
+        }
+
+        // ── Copy crypto address ──
+        function copyAddress(token) {
+            const el = document.getElementById('addr-' + token);
+            const address = el.textContent.trim();
+            navigator.clipboard.writeText(address).then(() => {
+                // Button feedback
+                const btn = el.closest('.token-card').querySelector('.token-copy');
+                btn.classList.add('copied');
+                btn.innerHTML = '<span class="material-symbols-rounded" style="font-size:18px">check</span> Copied';
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = '<span class="material-symbols-rounded" style="font-size:18px">content_copy</span> Copy';
+                }, 2200);
+
+                // Snackbar
+                const names = { btc: 'Bitcoin', eth: 'Ethereum', ton: 'Toncoin', sol: 'Solana', usdt: 'Tether USDT', trx: 'TRON' };
+                showSnackbar(names[token] + ' address copied to clipboard');
+            });
+        }
+
+        // ── Snackbar ──
+        let snackbarTimer;
+        function showSnackbar(text) {
+            clearTimeout(snackbarTimer);
+            const sb = document.getElementById('snackbar');
+            document.getElementById('snackbar-text').textContent = text;
+            sb.classList.add('show');
+            snackbarTimer = setTimeout(() => sb.classList.remove('show'), 2500);
+        }
+    </script>
+</body>
+
+</html>
