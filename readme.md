@@ -2,9 +2,9 @@
 
 If you find my projects helpful and would like to support my work, you can donate using any of the following cryptocurrencies:
 
-## Bitcoin (BTC)
+## Bitcoin (BTC - Legacy) 
 ```
-bc1puvdwf287p75dsdaf0rzhh8ps6ylk68enhckvduesyyajl38yndssl3yj5e
+1HSc6LhyZU8mciCeHgBhgqHu7za7LBiRC1
 ```
 
 ## Ethereum (ETH)
